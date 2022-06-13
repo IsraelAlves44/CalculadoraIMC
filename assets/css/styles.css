@@ -5,6 +5,9 @@
     --primary-color-darker: #060561;
     --white: #fff;
     --green: rgb(0, 175, 58);
+    --yellow: rgb(210, 255, 9);
+    --red: rgb(255, 0, 0);
+    --strongerRed: rgb(148, 0, 0);
 }
 
 * {
@@ -54,4 +57,22 @@ form button:hover {
     margin-top: 15px;
     padding: 1rem;
     background-color: var(--green)
+}
+
+.result-contentYellow {
+    margin-top: 15px;
+    padding: 1rem;
+    background-color: var(--yellow)
+}
+
+.result-contentRed {
+    margin-top: 15px;
+    padding: 1rem;
+    background-color: var(--red)
+}
+
+.result-contentStrongerRed{
+    margin-top: 15px;
+    padding: 1rem;
+    background-color: var(--strongerRed)
 }
