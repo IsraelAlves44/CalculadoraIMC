@@ -53,26 +53,26 @@ form button:hover {
     transition: 0.5s;
 }
 
-.result-content {
-    margin-top: 15px;
+#result {
     padding: 1rem;
+}
+
+.result-content {
+    padding: 1rem 2rem;
     background-color: var(--green)
 }
 
 .result-contentYellow {
-    margin-top: 15px;
-    padding: 1rem;
+    padding: 1rem 2rem;
     background-color: var(--yellow)
 }
 
 .result-contentRed {
-    margin-top: 15px;
-    padding: 1rem;
+    padding: 1rem 2rem;
     background-color: var(--red)
 }
 
 .result-contentStrongerRed{
-    margin-top: 15px;
-    padding: 1rem;
+    padding: 1rem 2rem;
     background-color: var(--strongerRed)
 }

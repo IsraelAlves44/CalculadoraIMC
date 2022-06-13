@@ -12,6 +12,19 @@ form.addEventListener("submit", function (e) {
   const imcResult = calculateIMC(peso, altura);
   const imcLevel = levelImc(imcResult);
   const colorImc = color(imcResult);
+  if (!peso && !altura) {
+    resultContainer("Ambos Inválidos", false);
+    return;
+  }
+  if (!peso) {
+    resultContainer("Peso Inválido", false);
+    return;
+  }
+  if (!altura) {
+    resultContainer("Altura Inválida", false);
+    return;
+  }
+
   resultContainer(`Seu imc é de ${imcResult}, ${imcLevel}`, colorImc);
 });
 
@@ -54,5 +67,5 @@ function resultContainer(msg, color) {
   result.innerHTML = "";
   const p = createP(msg);
   p.classList.add(color);
-  result.appendChild(p)g
+  result.appendChild(p);
 }
