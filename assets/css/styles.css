@@ -4,6 +4,7 @@
     --primary-color: rgb(27, 25, 160);
     --primary-color-darker: #060561;
     --white: #fff;
+    --green: rgb(0, 175, 58);
 }
 
 * {
@@ -22,6 +23,8 @@ section {
     height: fit-content;
     padding: 1rem;
     margin: 20px auto;
+    border-radius: 15px;
+
     background-color: var(--white);
 }
 
@@ -45,4 +48,10 @@ form button {
 form button:hover {
     background-color: var(--primary-color-darker);
     transition: 0.5s;
+}
+
+.result-content {
+    margin-top: 15px;
+    padding: 1rem;
+    background-color: var(--green)
 }
